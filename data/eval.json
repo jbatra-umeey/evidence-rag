@@ -1,0 +1,38 @@
+[
+  {
+    "id": "bridge",
+    "question": "bridge readiness latency",
+    "role": "engineer",
+    "expected_source": "bridge-runbook"
+  },
+  {
+    "id": "evaluation",
+    "question": "retrieval evaluation reciprocal rank",
+    "role": "guest",
+    "expected_source": "retrieval-evaluation"
+  },
+  {
+    "id": "cache",
+    "question": "tenant cache isolation",
+    "role": "engineer",
+    "expected_source": "cache-policy"
+  },
+  {
+    "id": "release",
+    "question": "release smoke tests export",
+    "role": "guest",
+    "expected_source": "release-checks"
+  },
+  {
+    "id": "acl",
+    "question": "cobalt otter treasury allocation",
+    "role": "engineer",
+    "expected_source": null
+  },
+  {
+    "id": "unknown",
+    "question": "zebrafish quantum parachutes",
+    "role": "guest",
+    "expected_source": null
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "bridge-runbook",
+    "title": "Bridge readiness latency runbook",
+    "roles": [
+      "engineer"
+    ],
+    "text": "Investigate bridge readiness latency by separating process launch, WebView initialization, bridge-ready, and editor-display timings. Compare p50 and p95 within the same device tier and release.\n\nIf bridge-ready regresses after a release, inspect missing initialization events and JavaScript exceptions. Correlation does not establish causation; reproduce on a matching device before recommending a rollback."
+  },
+  {
+    "id": "retrieval-evaluation",
+    "title": "Retrieval evaluation protocol",
+    "roles": [
+      "public"
+    ],
+    "text": "Evaluate retrieval using a versioned question set with expected evidence IDs. Track recall at k, mean reciprocal rank, and abstention on unsupported questions. Keep evaluation examples separate from development examples."
+  },
+  {
+    "id": "cache-policy",
+    "title": "Tenant cache isolation",
+    "roles": [
+      "engineer"
+    ],
+    "text": "Cache keys must include tenant ID, model configuration, prompt version, and request content. Never share cached private answers between tenants. Invalidate cached answers after source access permissions change."
+  },
+  {
+    "id": "secret-budget",
+    "title": "Treasury access only",
+    "roles": [
+      "finance"
+    ],
+    "text": "The confidential treasury allocation codeword is cobalt-otter. Engineering roles must never retrieve this document."
+  },
+  {
+    "id": "release-checks",
+    "title": "Release validation guide",
+    "roles": [
+      "public"
+    ],
+    "text": "Before a release, run login, document creation, editing, and export smoke tests. Investigate failures and obtain human approval before changing a rollout."
+  }
+]
