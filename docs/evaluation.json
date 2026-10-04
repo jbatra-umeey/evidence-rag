@@ -1,0 +1,52 @@
+{
+  "dataset": "synthetic smoke cases; not a production benchmark",
+  "cases": [
+    {
+      "id": "bridge",
+      "pass": true,
+      "reciprocal_rank": 1.0,
+      "sources": [
+        "bridge-runbook",
+        "bridge-runbook"
+      ]
+    },
+    {
+      "id": "evaluation",
+      "pass": true,
+      "reciprocal_rank": 1.0,
+      "sources": [
+        "retrieval-evaluation"
+      ]
+    },
+    {
+      "id": "cache",
+      "pass": true,
+      "reciprocal_rank": 1.0,
+      "sources": [
+        "cache-policy"
+      ]
+    },
+    {
+      "id": "release",
+      "pass": true,
+      "reciprocal_rank": 1.0,
+      "sources": [
+        "release-checks"
+      ]
+    },
+    {
+      "id": "acl",
+      "pass": true,
+      "reciprocal_rank": 0,
+      "sources": []
+    },
+    {
+      "id": "unknown",
+      "pass": true,
+      "reciprocal_rank": 0,
+      "sources": []
+    }
+  ],
+  "pass_rate": 1.0,
+  "mrr_at_3_answerable": 1.0
+}

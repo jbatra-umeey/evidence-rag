@@ -1,0 +1,24 @@
+{
+  "question": "How should we investigate bridge readiness latency?",
+  "mode": "extractive",
+  "abstained": false,
+  "citations": [
+    {
+      "id": "ea0fdcec8279",
+      "source": "bridge-runbook",
+      "text": "Investigate bridge readiness latency by separating process launch, WebView initialization, bridge-ready, and editor-display timings. Compare p50 and p95 within the same device tier and release."
+    },
+    {
+      "id": "9fd957bf25dd",
+      "source": "bridge-runbook",
+      "text": "If bridge-ready regresses after a release, inspect missing initialization events and JavaScript exceptions. Correlation does not establish causation; reproduce on a matching device before recommending a rollback."
+    },
+    {
+      "id": "d24e86684e58",
+      "source": "release-checks",
+      "text": "Before a release, run login, document creation, editing, and export smoke tests. Investigate failures and obtain human approval before changing a rollout."
+    }
+  ],
+  "answer": "Investigate bridge readiness latency by separating process launch, WebView initialization, bridge-ready, and editor-display timings. Compare p50 and p95 within the same device tier and release. [ea0fdcec8279]\n\nIf bridge-ready regresses after a release, inspect missing initialization events and JavaScript exceptions. Correlation does not establish causation; reproduce on a matching device before recommending a rollback. [9fd957bf25dd]\n\nBefore a release, run login, document creation, editing, and export smoke tests. Investigate failures and obtain human approval before changing a rollout. [d24e86684e58]",
+  "latency_ms": 0.188
+}

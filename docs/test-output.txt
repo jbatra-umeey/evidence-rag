@@ -1,0 +1,17 @@
+test_generate_wire_contract (test_model.ModelContractTests.test_generate_wire_contract) ... ok
+test_incomplete_response_is_rejected (test_model.ModelContractTests.test_incomplete_response_is_rejected) ... ok
+test_malformed_embedding_is_rejected (test_model.ModelContractTests.test_malformed_embedding_is_rejected) ... ok
+test_structured_output_must_be_object (test_model.ModelContractTests.test_structured_output_must_be_object) ... ok
+test_access_filter_precedes_embedding (test_rag.RetrievalTests.test_access_filter_precedes_embedding) ... ok
+test_explicit_model_abstention (test_rag.RetrievalTests.test_explicit_model_abstention) ... ok
+test_invalid_model_citation_is_rejected (test_rag.RetrievalTests.test_invalid_model_citation_is_rejected) ... ok
+test_private_chunks_not_returned (test_rag.RetrievalTests.test_private_chunks_not_returned) ... ok
+test_retrieval_evaluation (test_rag.RetrievalTests.test_retrieval_evaluation) ... ok
+test_role_never_inherited_from_question (test_rag.RetrievalTests.test_role_never_inherited_from_question) ... ok
+test_unknown_question_abstains (test_rag.RetrievalTests.test_unknown_question_abstains) ... ok
+test_valid_citations_preserve_source (test_rag.RetrievalTests.test_valid_citations_preserve_source) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.003s
+
+OK
